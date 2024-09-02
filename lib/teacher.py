@@ -19,3 +19,10 @@ class Teacher(User):
     def teach(self):
         return random.choice(self.knowledge)
         pass
+    def __str__(self):
+        return (f"Teacher: {self.first_name} {self.last_name}, "
+                f"Knowledge: {self.knowledge}")
+    
+teacher = Teacher("Jane", "Smith") 
+
+print(teacher)  
