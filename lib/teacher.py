@@ -17,4 +17,5 @@ class Teacher(User):
 ]
 
     def teach(self):
+        return random.choice(self.knowledge)
         pass
